@@ -5,12 +5,12 @@
 
 
 ## Game Overview
-**Product Management Quiz** is a browser-based trivia game that tests your knowledge of product management fundamentals and popular PM books.  
+**Product Management Quiz** is a browser-based trivia game that tests your knowledge of product management books.  
 Players can choose between two quiz topics:
 - **General PM Quiz** – covers core principles, frameworks, and roles in product management.  
-- **PM Books Quiz** – focuses on identifying authors of key product management and startup literature.
+- **PM Books Quiz** – focuses on identifying authors of key product management books.
 
-The game gives instant feedback on each question and provides a final score with encouraging results and a confetti celebration for top performers.
+The game gives instant feedback on each question and provides a final score and a confetti celebration for top performers.
 
 ## Getting Started
  **Play the game here:**  [Deployed App Link](https://gabrielazahoranska.github.io/pm-quiz-game/)
@@ -24,7 +24,7 @@ The game gives instant feedback on each question and provides a final score with
 6. Click **Restart** to play again or choose another quiz.
 
 ### Planning Materials
-[Your Planning Document Link](https://docs.google.com/document/d/1pzAml9m3pA3kOH6fGmozIiOO6cLEY5AZonp8bG3YhI4/edit?tab=t.0)
+[Planning Document Link](https://docs.google.com/document/d/1pzAml9m3pA3kOH6fGmozIiOO6cLEY5AZonp8bG3YhI4/edit?tab=t.0)
 
 
 ## Attributions
