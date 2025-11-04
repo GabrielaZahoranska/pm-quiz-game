@@ -1,7 +1,7 @@
 # Product Management Quiz Game
 
 ## Screenshot / Logo
-![PM Quiz Screenshot](https://github.com/GabrielaZahoranska/pm-quiz-game/blob/main/assets/Screenshot.png?raw=true)
+![PM Quiz Screenshot](https://github.com/GabrielaZahoranska/pm-quiz-game/assets/Screenshot.png?raw=true)
 
 
 ## Game Overview
