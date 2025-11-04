@@ -1,7 +1,8 @@
 # Product Management Quiz Game
 
 ## Screenshot / Logo
-![PM Quiz Screenshot](/Users/gabrielazahoranska/code/ga/projects/pm-quiz-game/assets/Screenshot.png)
+![PM Quiz Screenshot](https://github.com/GabrielaZahoranska/pm-quiz-game/blob/main/assets/Screenshot.png?raw=true)
+
 
 ## Game Overview
 **Product Management Quiz** is a browser-based trivia game that tests your knowledge of product management fundamentals and popular PM books.  
