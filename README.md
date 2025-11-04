@@ -13,7 +13,7 @@ Players can choose between two quiz topics:
 The game gives instant feedback on each question and provides a final score with encouraging results and a confetti celebration for top performers.
 
 ## Getting Started
- **Play the game here:**  [Deployed App Link](https://gabrielazahoranska.github.io/Game/)
+ **Play the game here:**  [Deployed App Link](https://gabrielazahoranska.github.io/pm-quiz-game/)
 
  ### Instructions
 1. Choose which quiz you want to play.  
