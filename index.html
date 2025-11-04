@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
-    <script src="js/app.js" defer></script>
+    <title>PM Quiz Game</title>
+    <script src="./js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <main id="quiz-container">
+    <h1>PM Quiz</h1>
+</div>
+
+    <div id="quiz-selection">
+        <img 
+    id="quiz-logo" 
+    src="assets/pm-quiz-logo.png" 
+    alt="Illustration of a person managing projects on a dashboard" 
+  >
+         <div id="instructions">
+  <p>Select which quiz you want to play. Each question has one correct answer. 
+  Click your choice to see feedback, then click Next to continue. 
+  Your final score will appear at the end.</p> </div>
+
+      <button class="quiz-btn" data-quiz="general">General PM Quiz</button>
+      <button class="quiz-btn" data-quiz="books">PM Books Quiz</button>
+    </div>
+
+    <div id="question-container" class="hidden">
+      <div id="question"></div>
+      <div id="options"></div>
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
+
+    <div id="result-container" class="hidden">
+      <p id="result-message"></p>
+      <p id="final-score"></p>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </main>
     
 </body>
 </html>

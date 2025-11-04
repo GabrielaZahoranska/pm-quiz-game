@@ -1,0 +1,185 @@
+/* === General Layout === */
+/* Base page layout: center quiz card and set background gradient */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(135deg, #c7d2e9 0%, #c5e6f0 100%);
+  color: #222;
+  display: flex;               /* center content with Flexbox */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;          /* full viewport height */
+  margin: 0;                  /* remove default page margin */
+}
+
+/* === Quiz Container === */
+/* Card that holds the entire quiz UI */
+#quiz-container {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 480px;           /* limit card width for readability */
+  text-align: center;
+  display: flex;              /* use Flexbox for vertical layout */
+  flex-direction: column;
+  gap: 1.5rem;                /* vertical spacing between children */
+  animation: fadeIn 0.5s ease-in; /* subtle entrance animation */
+}
+
+#quiz-logo {
+  width: 140px;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Title === */
+/* Styling for the main title inside the card */
+#quiz-container h1 {
+  font-size: 1.8rem;
+  color: #0a0a0a;
+  margin-bottom: 0.5rem;
+}
+
+/* === Quiz Selection Buttons === */
+/* Buttons that choose which quiz to start */
+.quiz-btn {
+  background: #0078ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 1.2rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  width: 80%;                 /* make selection buttons prominent but not full-width */
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+#instructions {
+  font-size: 0.95rem;
+  color: #333;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* Hover state: slight lift and darker background */
+.quiz-btn:hover {
+  background: #005fe0;
+  transform: translateY(-2px);
+}
+
+/* === Question and Options === */
+/* Question text styling */
+#question {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Options list uses column layout with even gaps */
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Individual option button styling */
+#options button {
+  background: #f4f4f4;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover on options to give feedback */
+#options button:hover {
+  background: #e9f1ff;
+  border-color: #0078ff;
+}
+
+/* Styles applied when answer is correct */
+.correct {
+  background-color: #28a745 !important; /* green */
+  color: #fff !important;
+  border: none !important;
+}
+
+/* Styles applied when answer is wrong */
+.wrong {
+  background-color: #dc3545 !important; /* red */
+  color: #fff !important;
+  border: none !important;
+}
+
+/* === Next and Restart Buttons === */
+/* Shared styles for next/restart controls */
+#next-btn,
+#restart-btn {
+  background: #058637;        /* green tone for action */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  align-self: center;         /* center inside the flex column */
+  min-width: 120px;
+}
+
+/* Hover state for action buttons (keeps same hue but could darken) */
+#next-btn:hover,
+#restart-btn:hover {
+  background: #04672a;        /* slightly darker for hover */
+}
+
+/* === Results === */
+/* Default hidden; revealed by JS by removing the 'hidden' class or setting inline display */
+#result-container {
+  display: none;              /* keep hidden on initial load to avoid flash */
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* Result headline */
+#result-message {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0055ff;
+}
+
+/* Final score text */
+#final-score {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* === Utility === */
+/* Reusable hidden class used by JS to toggle visibility */
+.hidden {
+  display: none;
+}
+
+/* Entrance animation used by the quiz card */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* === Accessibility === */
+/* Strong visible focus ring for keyboard users */
+button:focus {
+  outline: 3px solid #0055ff;
+  outline-offset: 2px;
+}
