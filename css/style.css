@@ -12,7 +12,7 @@ body {
 }
 
 /* === Quiz Container === */
-/* Card that holds the entire quiz UI */
+/* Card that holds the entire quiz */
 #quiz-container {
   background: #ffffff;
   padding: 2rem 2.5rem;
@@ -24,7 +24,7 @@ body {
   display: flex;              /* use Flexbox for vertical layout */
   flex-direction: column;
   gap: 1.5rem;                /* vertical spacing between children */
-  animation: fadeIn 0.5s ease-in; /* subtle entrance animation */
+  animation: fadeIn 0.5s ease-in; /* entrance animation */
 }
 
 #quiz-logo {
@@ -54,7 +54,7 @@ body {
   padding: 0.9rem 1.2rem;
   margin-top: 1.5rem;
   font-size: 1.5rem;
-  width: 80%;                 /* make selection buttons prominent but not full-width */
+  width: 80%;                 /* make selection buttons not full-width */
   cursor: pointer;
   transition: background 0.2s ease, transform 0.1s ease;
 }
